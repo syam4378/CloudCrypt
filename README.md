@@ -1,2 +1,3 @@
 # CloudCrypt
-project related to AWS
+
+File upload project using Node.js and AWS S3
