@@ -64,7 +64,7 @@ app.post("/upload", upload.single("file"), async (req, res) => {
         if (!userExists) return res.status(404).send("User not registered")
 
         const params = {
-            Bucket: "syam-8056",
+            Bucket: "cse-key1",
             Key: `${user}/${req.file.originalname}`, 
             Body: req.file.buffer,
             ContentType: req.file.mimetype
@@ -85,6 +85,6 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     }
 })
 
-app.listen(3000, () => {
+app.listen(4000, () => {
     console.log("server running successfully")
 }) 
